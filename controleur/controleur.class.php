@@ -22,10 +22,9 @@ class Controleur {
 		return $this->unModele->selectAllMessages($where);
 	}
 
-	public function selectWhere($where, $chaine = "*") {
+	public function selectWhere($chaine = "*", $where) {
 		return $this->unModele->selectWhere($chaine, $where);
 	}
-	
 
 	public function insert($tab) {
 		$this->unModele->insert($tab);
